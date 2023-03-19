@@ -1,6 +1,6 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-import HomeScreen from "./src/screens/main/HomeScreen";
+import HomeScreen from "./src/screens/home/HomeScreen";
 import RegistrationScreen from "./src/screens/auth/RegistrationScreen";
 import LoginScreen from "./src/screens/auth/LoginScreen";
 
@@ -9,7 +9,7 @@ const AuthStack = createStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <AuthStack.Navigator>
+      <AuthStack.Navigator initialRouteName="Login">
         <AuthStack.Screen
           options={{ headerShown: false }}
           name="Home"

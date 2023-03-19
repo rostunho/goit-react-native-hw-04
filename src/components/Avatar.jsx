@@ -1,12 +1,10 @@
 import { StyleSheet, View, Image } from "react-native";
+import { AddPhotoIcon } from "../assets/custom-icons";
 
 export default function Avatar() {
   return (
     <View style={styles.container}>
-      <Image
-        style={styles.addIcon}
-        source={require("../assets/images/add-icon.png")}
-      />
+      <AddPhotoIcon style={styles.addIcon} />
     </View>
   );
 }

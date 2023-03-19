@@ -1,9 +1,9 @@
 import { View, Text, StyleSheet } from "react-native";
 
-export default function PostsScreen() {
+export default function MapScreen() {
   return (
     <View style={styles.container}>
-      <Text style={{ fontSize: 40 }}>POSTS SCREEN</Text>
+      <Text style={{ fontSize: 40 }}>MAP SCREEN</Text>
     </View>
   );
 }

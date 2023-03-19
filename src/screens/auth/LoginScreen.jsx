@@ -31,7 +31,10 @@ export default function LoginScreen({ navigation }) {
     console.log("Password :", password);
     setEmail("");
     setPassword("");
-    navigation.navigate("Home");
+    navigation.navigate("Home", {
+      screen: "Default",
+      params: { screen: "Posts" },
+    });
   };
 
   return (

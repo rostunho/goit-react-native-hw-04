@@ -35,7 +35,10 @@ export default function RegistrationScreen({ navigation }) {
     setLogin("");
     setEmail("");
     setPassword("");
-    navigation.navigate("Home");
+    navigation.navigate("Home", {
+      screen: "Default",
+      params: { screen: "Posts" },
+    });
   };
 
   return (
